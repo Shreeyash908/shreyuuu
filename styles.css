@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f3a2bc;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: -10px;
+    border-top: 5px solid #f3a2bc;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #f3a2bc;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Message Section */
+.message {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.message h2 {
+    font-size: 2rem;
+    color: #f3a2bc;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Image Carousel Section */
+.image-carousel {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.image-carousel h2 {
+    font-size: 2rem;
+    color: #f3a2bc;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    animation: scrollImages 20s linear infinite;
+}
+
+.carousel-images img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+/* Mobile Styles - Default mobile-first design */
+
+/* Adjustments for larger screens with media queries */
+@media (min-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .about h2, .message h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p, .message p {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+    }
+
+    .about h2, .message h2 {
+        font-size: 3rem;
+    }
+
+    .about p, .message p {
+        font-size: 1.3rem;
+    }
+
+    .footer p {
+        font-size: 1.3rem;
+    }
+}
